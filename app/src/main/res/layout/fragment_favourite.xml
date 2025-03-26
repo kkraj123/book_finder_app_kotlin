@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".favouriteFragment.view.FavouriteFragment">
+
+        <LinearLayout
+            android:id="@+id/toolbarItem"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/backgroundColor"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favourite_items"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                style="@style/medium_font"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarItem"
+            android:layout_marginTop="10dp"
+            android:id="@+id/favItemsRV"/>
+
+        <include
+            android:visibility="gone"
+            layout="@layout/no_data_found"
+            android:id="@+id/noDataFoundView"/>
+
+    </RelativeLayout>
+</layout>

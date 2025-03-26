@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--light theme-->
+    <color name="colorPrimary">#4F959D</color>
+    <color name="colorSecondary">#4F959D</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlack">#0C090A</color>
+
+
+
+
+
+    <!-- Dark theme colors -->
+    <color name="primaryDark">#121212</color>
+    <color name="primaryVariantDark">#424242</color>
+    <color name="secondaryDark">#03DAC6</color>
+    <color name="colorGray">#424242</color>
+
+
+    <color name="colorLightGray">#B7B4B4</color>
+
+
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".homeFragment.view.BookDetailsActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbarView"
+            android:layout_width="match_parent"
+            style="@style/backgroundColor"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/back_btn"
+                android:layout_centerVertical="true"
+                app:tint="@color/colorWhite"
+                android:contentDescription="@string/back_btn"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_toEndOf="@+id/backBtn"
+                android:text="@string/details"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:textSize="18sp"
+                android:lines="1"
+                android:maxLines="1"
+                style="@style/medium_font"/>
+            <LinearLayout
+                android:id="@+id/addToFavouriteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/favBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:contentDescription="@string/fab_btn"
+                    android:src="@drawable/remove_add_fav_icon"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/subTitleTV"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    style="@style/medium_font"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/autheTV"
+                    android:layout_below="@+id/subTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    style="@style/medium_font"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/authers"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/autheTV"
+                    android:overScrollMode="never"
+                    android:id="@+id/autherListItem"/>
+                <RelativeLayout
+                    android:id="@+id/imgLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/autherListItem">
+                    <ImageView
+                        android:id="@+id/bookImg"
+                        android:layout_width="100dp"
+                        android:layout_height="160dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/book_img"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/bookImg"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/publisherNdDateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            style="@style/textColor"/>
+
+                        <TextView
+                            android:id="@+id/contentVersionTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            style="@style/regular_font"/>
+                        <TextView
+                            android:id="@+id/pagesCounterNdLanguageTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            style="@style/regular_font"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgLayout">
+                    <TextView
+                        android:id="@+id/descriptionTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desription"
+                        android:textSize="18sp"
+                        style="@style/medium_font"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:id="@+id/bookDescriptionTV"
+                        android:layout_below="@+id/descriptionTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_margin="10dp"
+                        android:textAlignment="textStart"
+                        style="@style/textColor"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

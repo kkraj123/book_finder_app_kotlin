@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BookFinder" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <!--light theme-->
+    <style name="Theme.BookFinder" parent="Base.Theme.BookFinder">
+<!--        <item name="android:background">@color/colorPrimary</item>-->
+    </style>
+
+    <style name="textColor" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="layoutBackgroundColor">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+    <style name="bottomBarBgColor">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="backgroundColor">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!--end light theme-->
+
+
+
+
+
+     <!-- fonts style-->
+    <style name="regular_font" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+                 <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="medium_font" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+                 <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="semi_medium_font" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+                 <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bold_font" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <!--End Font style-->
+</resources>

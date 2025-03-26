@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Book Finder App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="welcome_to_book_finder_app">Welcome to book finder app</string>
+    <string name="popular_tech_books">Popular Tech Books</string>
+    <string name="book_img">book_img</string>
+    <string name="title">Title</string>
+    <string name="back_btn">back_btn</string>
+    <string name="desription">Description</string>
+    <string name="add_to_favourite">Add To Favourite</string>
+    <string name="authers">Auther :</string>
+    <string name="details">Details</string>
+    <string name="empty_favourite_item">Empty Favourite Item</string>
+    <string name="no_fav_icon">no_fav_icon</string>
+    <string name="successfully_add_your_favourite">Successfully added your favourite</string>
+    <string name="favourite_items">Favourite Items</string>
+    <string name="remove_favourite_item">Remove favourite item</string>
+    <string name="remove">Remove</string>
+    <string name="fab_btn">fab_btn</string>
+</resources>
